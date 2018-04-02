@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout">
+
+<head>
+    <title>401 Unauthorized</title>
+</head>
+
+<body id="cas">
+<div layout:fragment="content">
+    <div class="alert alert-danger">
+        <h2 class="prompt">401 Unauthorized</h2>
+        <div class="prompt">
+            <p/>
+            <p>You do not have permission to view this page.</p>
+
+            <br/>
+            <p><a th:href="@{/login}">Back to Login</a></p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

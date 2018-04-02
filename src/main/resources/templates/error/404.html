@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout">
+
+<head>
+    <title>404 Not Found</title>
+</head>
+
+<body id="cas">
+<div layout:fragment="content">
+    <div class="alert alert-danger">
+        <h2 class="prompt">404 Not Found</h2>
+        <div class="prompt">
+            <p/>
+            <p>The page you requested could not be found.</p>
+
+            <br/>
+            <p><a th:href="@{/login}">Back to Login</a></p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
